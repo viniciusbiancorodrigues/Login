@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "173814860882",
+    "project_id": "login-b151a",
+    "storage_bucket": "login-b151a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173814860882:android:830abf1b6736bf6290e38b",
+        "android_client_info": {
+          "package_name": "com.imc.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173814860882-pf0gfpcoanou40djt884n72mm5hboggs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCznTnjCxb00TiuCyb24OdpD0CfNfo2CME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173814860882-pf0gfpcoanou40djt884n72mm5hboggs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
