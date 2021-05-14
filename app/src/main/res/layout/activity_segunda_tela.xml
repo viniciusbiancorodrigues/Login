@@ -5,9 +5,8 @@
     android:id="@+id/segundatela"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/laranja"
-    tools:context=".SegundaTela">
-
+    android:background="@color/white"
+    tools:context="view.SegundaTela">
 
 
     <androidx.recyclerview.widget.RecyclerView

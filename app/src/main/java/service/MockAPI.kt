@@ -1,11 +1,12 @@
-package com.imc.login
+package service
 
 
+import model.Model
 import retrofit2.Call
 import retrofit2.http.GET
 
 interface MockAPI {
-    @GET("api/v1/login")
+    @GET("everis/users")
     fun getmockapi(): Call<List<Model>>
 
 }

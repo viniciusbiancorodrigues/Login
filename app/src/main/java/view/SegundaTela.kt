@@ -1,12 +1,13 @@
-package com.imc.login
+package view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_segunda_tela.*
+import com.imc.login.R
+import model.Model
+import service.MockRetrofit
 
 
 class SegundaTela : AppCompatActivity() {

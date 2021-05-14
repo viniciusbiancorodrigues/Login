@@ -1,11 +1,12 @@
-package com.imc.login
+package view
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
+import com.imc.login.R
+import model.Model
 
 class Adapter(
     private val list: List<Model>
@@ -21,8 +22,7 @@ class Adapter(
                 false
             )
         )
-        //        val view = LayoutInflater.from(parent.context).inflate(R.layout.mocklayout, parent, false)
-//        return ViewHolder(view)
+
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -41,6 +41,10 @@ class Adapter(
         private val name: TextView? = itemView.findViewById(R.id.name)
         fun bind(Objeto: Model) {
             name!!.text = Objeto.name
+
+
+
         }
+
     }
 }
