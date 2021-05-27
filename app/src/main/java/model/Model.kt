@@ -5,7 +5,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
  data class Model (
-        val id:String,
-        val name:String,
-        val avatar:String
+        val description:String,
+        val title:String,
+        val urlToImage:String
         ):Parcelable

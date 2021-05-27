@@ -17,7 +17,7 @@ class Adapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(
-                R.layout.mocklist,
+                R.layout.newslist,
                 parent,
                 false
             )
@@ -38,13 +38,20 @@ class Adapter(
         itemView: View
     ) : RecyclerView.ViewHolder(itemView) {
 
-        private val name: TextView? = itemView.findViewById(R.id.name)
+        val title: TextView? = itemView.findViewById(R.id.title)
         fun bind(Objeto: Model) {
-            name!!.text = Objeto.name
+            title!!.text = Objeto.title
+
+            val description: TextView? = itemView.findViewById(R.id.description)
+            fun bind(Objeto: Model) {
+                description!!.text = Objeto.description
+
+                val urlToImage: TextView? = itemView.findViewById(R.id.urlToImage)
+                fun bind(Objeto: Model) {
+                    urlToImage!!.text = Objeto.urlToImage
 
 
+                }
 
-        }
-
-    }
-}
+            }
+        }}}

@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login">
         <activity android:name="view.SegundaTela"></activity>
-        <activity android:name="view.MockActivity"></activity>
+        <activity android:name="view.NewsActivity"></activity>
         <activity android:name="view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

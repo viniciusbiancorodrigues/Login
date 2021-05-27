@@ -7,20 +7,20 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object MockRetrofit {
-    private val api: MockAPI
+object NewsRetrofit {
+    private val api: NewsAPI
     init{
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://609d36bb04bffa001792e377.mockapi.io/")
+            .baseUrl("https://newsapi.org/v2/everything?q=tecnologia&apiKey=")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-        api = retrofit.create(MockAPI::class.java)
+        api = retrofit.create(NewsAPI::class.java)
     }
-    fun mockturn(
+    fun newsturn(
         onSuccess:(model:List<Model>)->Unit,
         onError:()->Unit
         ){
-        api.getmockapi()
+        api.getnewsapi()
             .enqueue(object: Callback<List<Model>>
             {
                 override fun onResponse(call: Call<List<Model>>, response: Response<List<Model>>) {
